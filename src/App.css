@@ -1,35 +1,81 @@
 /* App.css */
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Use the full height of the viewport */
-}
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    cursor: url('../public/images/cacti.png'), auto;
 
-.status {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
+  }
+  
+  .status {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0;
+  }
+  
 
-.board {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  grid-gap: 5px;
-}
 
-.square {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
 
-.square:hover {
-  background-color: #f0f0f0;
-}
+  /* App.css */
+
+/* ... (existing styles) */
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 20px); /* Adjust the size as needed */
+    grid-template-rows: repeat(10, 20px); /* Adjust the size as needed */
+    grid-gap: 1px; /* Adjust the gap as needed */
+    border: 1px solid #ddd;
+    margin: 10px;
+  }
+  
+  .grid-cell {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    border: 1px solid #eee;
+    background-color: #fff;
+  }
+  
+  .snake {
+    background-color: #333; /* Color for snake segments */
+  }
+  
+  .food {
+    background-color: #ff0000; /* Color for the food */
+  }
+  
+  .game-info {
+    margin-top: 10px;
+  }
+  
+  /* ... (other styles) */
+  

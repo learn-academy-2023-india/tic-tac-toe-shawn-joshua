@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url('../public/images/pngtree-bubble-white-bubble-foam-flying-transparent-bubble-foam-blue-small-bubblesbig-png-image_663387.jpg'), 10 5, auto;
+
 }
 
 code {
