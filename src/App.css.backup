@@ -1,0 +1,37 @@
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Use the full height of the viewport */
+  cursor: url('/Users/learnacademy/Desktop/tic-tac/tic-tac-toe-shawn-joshua/src/components/images/cursor.webp'), pointer;
+
+}
+
+.status {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 5px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: url('/Users/learnacademy/Desktop/tic-tac/tic-tac-toe-shawn-joshua/src/components/images/cursor.webp'), pointer;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
